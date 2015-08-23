@@ -74,7 +74,7 @@ class UserController extends Controller {
         cookie('userId', null); //退出登录的时候清除cookie
         setcookie('is_login', 'yes', time()-86400, '/', '.touzila.com');
         //$this->redirect('/Home/Index/index');
-        redirect('/Home/Index/index');
+        redirect('/?c=Index&a=index');
     }
 
 
