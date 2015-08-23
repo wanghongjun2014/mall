@@ -12,5 +12,5 @@ return array(
     'DB_PORT' => '3306', // 数据库表前缀
     'DB_CHARSET' => 'utf8', // 数据库表前缀
     'DB_RW_SEPARATE' => true,
-    'URL_ROUTER_ON'   => true, //开启路由
+'URL_ROUTER_ON'   => true, //开启路由
 );
