@@ -1,78 +1,63 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>首页</title>
-    <link type="text/css" href="/static/jifen/hcss/public.css"  rel="stylesheet"/>
-    <link type="text/css" href="/static/jifen/hcss/demo.css"  rel="stylesheet"/>
-    <link type="text/css" href="/static/jifen/hcss/easydropdown.css"  rel="stylesheet"/>
-    <script src="/static/hjs/jquery.min.js" type="text/javascript"></script>
-    <script src="/static/hjs/jquery.easydropdown.js" type="text/javascript"></script>
-    <script src="/static/hjs/superslide.js" type="text/javascript"></script>
+    <title>礼遇天下</title>
+    <meta name="description" content="礼遇天下" />
+    <link href="/static/jifen/css/css.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="/static/jifen/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="/static/jifen/js/js.js"></script>
 </head>
 <style>
-    .zuoleft{position:relative;width:180px;height:auto;margin-top:-70px;z-index:10;}
-    .zuoleft .nav-left{position:absolute;left:0;top:0;width:180px;z-index:2}
-    .zuoleft .nav-left dt{width:180px;height:70px;font-size:19px;background:#ae152e;border-radius:5px 5px 0px 0px;}
-    .zuoleft .nav-left dt a{position:relative;display:block;color:#ffffff;width:180px;text-align:center;height:54px;line-height:54px;padding-top:16px;}
+    .zuoleft{position:absolute;top:126px;margin-top:0;background:#ffffff;}
+    .zuoleft dt{background:#cb2943;}
+    .zuoleft .nav-left dd{display:none;}
 </style>
+<script>
+    $(document).ready(function() {
+        $(".zuoleft .nav-left").hover(function(){
+            $(this).find("dd").show();
+        });
+        $(".zuoleft .nav-left").mouseleave(function(){
+            $(this).find("dd").hide();
+        });
+    });
+</script>
 <body>
-<div class="head">
-    <img src="/static/jifen/himg/loge.png" />
-    <div class="gwc"><P>我的购物车&gt;</P><img src="/static/jifen/himg/gwc.png" />
-        <a href="#"><p class="sl">4</p></a>
-    </div>
-    <div class="inp">
-        <fieldset>
-
-            <select tabindex="4" class="dropdown">
-                <option value="" class="label" value="">全部礼品</option>
-                <option value="1">全部礼品</option>
-                <option value="2">全部礼品</option>
-                <option value="3">全部礼品</option>
-                <option value="4">全部礼品</option>
-                <option value="5">全部礼品</option>
-                <option value="6">全部礼品</option>
-                <option value="7">全部礼品</option>
-                <option value="8">全部礼品</option>
-
-
-            </select>
-
-            <select tabindex="5" class="dropdown" >
-                <option value="" class="label">全部积分</option>
-                <option value="1">全部积分</option>
-                <option value="2">全部积分</option>
-                <option value="3">全部积分</option>
-                <option value="4">全部积分</option>
-                <option value="5">全部积分</option>
-                <option value="6">全部积分</option>
-                <option value="7">全部积分</option>
-                <option value="8">全部积分</option>
-
-            </select>
-            <button class="two">搜索</button>
-            <input name="" type="text"  class="one"/>
-
-        </fieldset>
-
-    </div>
-</div>
 <div class="top">
-
-    <div class="nav">
-        <ul>
-            <a href="index.html"><li class="dthis jj">首页</li></a>
-            <a href="produce.html"><li>产品中心</li></a>
-            <a href="xinpintuijian.html"><li>新品推荐</li></a>
-            <a href="fuli.html"><li>福利专区</li></a>
-            <a href="kehu.html"><li>客户专区</li></a>
-            <a href="huangou.html"><li>超值换购</li></a>
-            <a href="xinyi.html"><li>心仪礼品</li></a>
-            <a href="jifen.html"><li>积分活动</li></a>
-            <a href="huiyuan.html"><li>会员中心</li></a>
-        </ul>
-    </div>
+    <a href="index.html" class="logo"><img src=/static/jifen/img/logo.jpg"/></a>
+    <ul class="tsec">
+        <li class="nth"><a class="ts">全部礼品<b>▼</b></a>
+            <ul>
+                <li><a href="javascript:void(0);">高端手表</a></li>
+                <li><a href="javascript:void(0);">收藏品</a></li>
+                <li><a href="javascript:void(0);">精品箱包</a></li>
+            </ul>
+        </li>
+        <li class="nth"><a class="ts">全部积分<b>▼</b></a>
+            <ul>
+                <li><a href="javascript:void(0);">高端手表</a></li>
+                <li><a href="javascript:void(0);">收藏品</a></li>
+                <li><a href="javascript:void(0);">精品箱包</a></li>
+            </ul>
+        </li>
+        <li class="nth1"><input type="text" /></li>
+        <li class="nth2"><input type="button" value="搜索" /></li>
+        <li class="nth3">我的购物车><img src=/static/jifen/img/che.png"/><span>4</span></li>
+    </ul>
+</div>
+<div class="navbar">
+    <ul class="nav-right">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="produce.html">产品中心</a></li>
+        <li><a href="xinpintuijian.html">新品推荐</a></li>
+        <li><a href="fuli.html">福利专区</a></li>
+        <li><a href="kehu.html">客户专区</a></li>
+        <li><a href="huangou.html">超值换购</a></li>
+        <li><a href="xinyi.html">心仪礼品</a></li>
+        <li><a href="action.html">积分活动</a></li>
+        <li class="dthis"><a href="huiyuan.html">会员中心</a></li>
+    </ul>
 </div>
 <div class="zuoleft">
     <dl class="nav-left">
@@ -421,281 +406,52 @@
         </div>
     </dl>
 </div>
-<div class="maintop">
-    <div class="lft">
+<div class="zhu_body">
+    <div class="lubiao">您所在的位置：<a href="index.html">首页></a><h2>信息公告</h2></div>
+    <div class="sleft">
+        <div class="kuai1">
+            <ul class="changs">
+                <li><img src=/static/jifen/img/qi.jpg" /></li>
+                <li><img src=/static/jifen/img/qi.jpg" /></li>
+                <li><img src=/static/jifen/img/qi.jpg" /></li>
+                <li><img src=/static/jifen/img/qi.jpg" /></li>
+            </ul>
+
+        </div>
+
+
+    </div><!--sleft end-->
+    <div class="gong">
+        <div class="qiet bc" style="text-align:center;">
+            <span class="cf">会员注册信息</span>
+        </div>
+        <ul class="ullil">
+            <form action="/Home/User/register" method="post"/>
+            <li style="border-bottom:none;"><i>“ *  ”</i>为必填项</li>
+            <li><label>会员名：</label><input type="text" name="username" id="yname"/><label><i>*</i>请注意：会员名只能填写数字、字母或下划线！</label></li>
+            <li><label>设置密码：</label><input type="password" name="password" id="ypwd"/><label><i>*</i>请填写密码！ 请设置6-20位长度的数字或字母的密码，注意不能含空格！</label></li>
+            <li><label>确认密码：</label><input type="password" name="res_password"  id="yfpwd"/><label><i>*</i>请填写确认密码！ 确认密码须与您的设置密码一致！</label></li>
+            <li><label>电子邮件：</label><input type="text"  name="email" id="yemail"/><label><i>*</i>请正确填写邮件格式,我们将通过EMAIL地址找回您忘记的密码！</label></li>
+            <li><label>绑定手机：</label><input type="text" name="phone" id="yphone"/><label><input type="button" value="点击这里"  class="qbtn"/><i>*</i>请注意：购买产品必须绑定手机，以便收货！</label></li>
+            <li><input type="checkbox" id="xieyi"/><label>我已阅读并同意会员注册协议!</label></li>
+            <li><input value="确定"  type="submit" /><input value="取消"  type="button"/></li>
+            <!--<li><input value="确定"  type="button" onclick="tj();"/><input value="取消"  type="button"/></li>-->
+            </form>
+        </ul>
+
+    </div><!--gong end-->
+    <div class="clear"></div>
+    <div class="fanye" style="padding-top:30px;">
         <ul>
-            <a href="#"><li>
-                <div class="sty"><span>钟表、箱包</span><br /> 高端手表、精品箱包</div>
-
-            </li></a>
-            <a href="#"><li>
-                <div class="sty"><span>运动健康</span><br />  户外装备、纤体瑜伽 </div>
-
-            </li></a>
-            <a href="#"><li>
-                <div class="sty"><span>玩具乐器</span><br />  工艺摆件、收藏品  </div>
-
-            </li></a>
-            <a href="#"><li>
-                <div class="sty"><span>手机电脑、数码</span><br />  品牌电脑、数码产品  </div>
-
-            </li></a>
-            <a href="#"><li>
-                <div class="sty"><span>食品保健</span><br />   健康食品、厨具烹饪   </div>
-
-            </li></a>
-            <a href="#"><li>
-                <div class="sty"><span>汽车用品</span><br />   电子电器、内饰精品   </div>
-
-            </li></a>
-            <a href="#"><li>
-                <div class="sty"><span> 礼包、礼券、服务 </span><br />  礼包、礼券/卡/册   </div>
-
-            </li></a>
+            <li>1</li>
+            <li>2</li>
+            <li>下一页</li>
+            <li>末页</li>
         </ul>
     </div>
-    <div class="banner">
-        <div class="fullSlide">
-            <div class="bd">
-                <ul>
-                    <li style="background: transparent url(/static/jifen/himg/banner.jpg) no-repeat scroll center center; position: absolute; left: 0px; top: 0px; display: none;">
-                    </li>
-                    <li style="background: transparent url(/static/jifen/himg/banner.jpg) no-repeat scroll center center; position: absolute;   left: 0px; top: 0px; display: none;">
-                    </li>
-                    <li style="background: transparent url(/static/jifen/himg/banner.jpg) no-repeat scroll center center; position: absolute; left: 0px; top: 0px; display: none;">
-                    </li>
-                    <li style="background: transparent url(/static/jifen/himg/banner.jpg) no-repeat scroll center center; position: absolute;   left: 0px; top: 0px; display: none;">
-                    </li>
-                </ul>
-            </div>
-            <div class="hd"><ul><li class="">1</li><li class="on">2</li><li class="">3</li><li class="">4</li></ul></div>
-        </div>
-    </div>
-    <div class="navrg">
-        <p class="xxgg">信息公告</p>
-        <p class="zy">＞&nbsp;&nbsp;&nbsp;&nbsp;[重要]&nbsp;关于积分商城2015…</p>
-        <p class="zy">＞&nbsp;&nbsp;&nbsp;&nbsp;[重要]&nbsp;积分商城端午为答谢</p>
-        <p class="zy">＞&nbsp;&nbsp;&nbsp;&nbsp;积分商城订单复合公告…</p>
-        <p class="zy">＞&nbsp;&nbsp;&nbsp;&nbsp;[重要]&nbsp;积分商城春节  …</p>
-        <p class="zy">＞&nbsp;&nbsp;&nbsp;&nbsp;[重要]&nbsp;感谢顾客活动 …</p>
-        <p class="gd">更多…</p>
-    </div>
-<?php
-if(!session('user.id')){
-?>
-
-    <div class="navrgt">
-        <form action="/Home/User/login" method="post">
-            <p class="hyzx">会员中心</p>
-            <p class="zh">账号<input class="one" id="username" name="username" type="text" value=""   placeholder=" 手机 / 邮箱 / 微信" /></p>
-            <p class="zh">密码<input class="one" name="password" id="password" type="password"  value=""  placeholder=" 请输入您的密码" /></p>
-            <p class="zd"><input type="checkbox" class="checkbox" name="" value="" id="checkbox" />
-                <label for="">自动登陆</label><a href="#"><span>忘记密码</span></a>
-            </p>
-            <p class="zd qtzhdl">其他账号登陆</p>
-            <a href="/Home/user/register"><p class="yhzc">用户注册</p></a>
-            <div class="tx"><a href="/user/login"><img src="/static/jifen/himg/wb.png" /></a><a href="#"><img src="/static/jifen/himg/wx.png" /></a><a href="#"><img src="/static/jifen/himg/qq.png" /></a></div>
-            <!--<a href="/Home/user/login"><p class="dl">登陆</p></a>-->
-            <input type="submit" name="登录" onclick="return usercheck()"  class="dl"  value="登陆"/>
-        </form>
-    </div>
-
-
-
-    <?php
-
-} else {
-
-?>
-
- <p style="float:right;"><a href="/Home/User/logout">退出</a></p>
-
-
-    <?php
-
-}
-
-
-
-?>
-
-
 </div>
-<script type="text/javascript">
-var username = null;
-var password = null;
-function usercheck(){
-     username=$('#username').val();
-     password=$('#password').val();
-    if(username ==  '' ||  password == ''){
-        alert('请输入用户名或密码');
-        return false;
-    }
-}
 
 
-
-    //$(".fullSlide").hover(function(){
-    //    $(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
-    //},
-    //function(){
-    //    $(this).find(".prev,.next").fadeOut()
-    //});
-    $(".fullSlide").slide({
-        titCell: ".hd ul",
-        mainCell: ".bd ul",
-        effect: "fold",
-        autoPlay: true,
-        autoPage: true,
-        trigger: "click",
-        startFun: function(i) {
-            var curLi = jQuery(".fullSlide .bd li").eq(i);
-            if ( !! curLi.attr("_src")) {
-                curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
-            }
-        }
-    });
-
-</script>
-<script type="text/javascript">
-    var t = n =0, count;
-    $(document).ready(function(){
-        count=$("#banner_list a").length;
-        $("#banner_list a:not(:first-child)").hide();
-        $("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
-        $("#banner_info").click(function(){window.open($("#banner_list a:first-child").attr('href'), "_blank")});
-        $("#banner li").click(function() {
-            var i = $(this).text() -1;//获取Li元素内的值，即1，2，3，4
-            n = i;
-            if (i >= count) return;
-            $("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
-            $("#banner_info").unbind().click(function(){window.open($("#banner_list a").eq(i).attr('href'), "_blank")})
-            $("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
-            document.getElementById("banner").style.background="";
-            $(this).toggleClass("on");
-            $(this).siblings().removeAttr("class");
-        });
-        t = setInterval("showAuto()", 4000);
-        $("#banner").hover(function(){clearInterval(t)}, function(){t = setInterval("showAuto()", 4000);});
-    })
-
-    function showAuto()
-    {
-        n = n >=(count -1) ?0 : ++n;
-        $("#banner li").eq(n).trigger('click');
-    }
-
-</script>
-<div class="mainc">
-    <a href="#"><div class="cp"><img src="/static/jifen/himg/dh1.png" /><br /><p></p>万宝龙系列首饰珠宝   市场价： ￥189 <br /><span>￥  0   +1500积分</span></div></a>
-    <a href="#"><div class="cp"><img src="/static/jifen/himg/dh2.png" /><br /><p></p>彩色优质随身购物带     市场价 ：￥399 <br /><span>￥  0   +3400积分</span></div></a>
-    <a href="#"><div class="cp" style="margin-right:0"><img src="/static/jifen/himg/dh3.png" /><br /><p></p>欧美清新风格壁纸    市场价：$ 800 <br /><span>￥    0    +3000积分</span></div></a>
-</div>
-<div class="mainb">
-    <div class="mainlft">
-        <div class="jffl">按积分范围分类</div>
-        <div class="jf">
-            <div class="jfmain qb"><a href="#">全部积分</a></div>
-            <div class="jfmain"><a href="#">0-1000</a></div>
-            <div class="jfmain"><a href="#">1001-3000</a></div>
-            <div class="jfmain"><a href="#">3001-8000</a></div>
-            <div class="jfmain"><a href="#">8001-15000</a></div>
-            <div class="jfmain"><a href="#">15001-30000</a></div>
-            <div class="jfmain" style="border-bottom:0px"><a href="#">3000以上</a></div>
-        </div>
-        <div class="jffl" style="margin-top:25px">兑换排行</div>
-        <div class="jf" style="height:160px">
-            <div class="ph current">
-                <b>1</b>
-                <div class="sh"><img src="/static/jifen/himg/lp.png" /></div>
-                <div class="phb"><a href="chanpinxiangxi.html">飞利浦净水壶</a></div>
-                <div class="sxjf"><span>3200</span>积分</div>
-            </div>
-            <div class="ph ">
-                <b>2</b>
-                <div class="sh"><img src="/static/jifen/himg/lp.png" /></div>
-                <div class="phb"><a href="chanpinxiangxi.html">飞利浦净水壶</a></div>
-                <div class="sxjf"><span>3200</span>积分</div>
-            </div>
-            <div class="ph " style="border-bottom:0px">
-                <b>3</b>
-                <div class="sh"><img src="/static/jifen/himg/lp.png" /></div>
-                <div class="phb"><a href="chanpinxiangxi.html">飞利浦净水壶</a></div>
-                <div class="sxjf"><span>3200</span>积分</div>
-            </div>
-
-        </div>
-        <script type="text/javascript">
-            $(function(){
-
-
-                $(".ph").hover(function(){
-                    $(".ph").each(function(){
-                        $(this).removeClass("current");
-                    });
-                    $(this).addClass("current");
-                });
-            });
-        </script>
-        <div class="jffl" style="margin-top:25px">扫描二维码</div>
-        <div class="jf" style="height:195px">
-            <div class="ewm"><img src="/static/jifen/himg/ewm.png" /><br /><span>礼遇天下积分兑换商城</span><br />扫描二维码下载应用</div>
-        </div>
-    </div>
-    <div class="mainrgt">
-        <div class="rgttop">
-            <div class="xptj">
-                <p>新品推荐</p>
-                <a href="xinpintuijian.html">查看更多</a>
-            </div>
-            <div class="xp">
-                <ul>
-                    <a href="chanpinxiangxi.html"><li><img src="/static/jifen/himg/x1.png" /><br />小巨蛋迷你音响<br /><span>17400积分</span></li></a>
-                    <a href="chanpinxiangxi.html"><li><img src="/static/jifen/himg/x1.png" /><br />小巨蛋迷你音响<br /><span>17400积分</span></li></a>
-                    <a href="chanpinxiangxi.html"><li><img src="/static/jifen/himg/x1.png" /><br />小巨蛋迷你音响<br /><span>17400积分</span></li></a>
-                    <a href="chanpinxiangxi.html"><li><img src="/static/jifen/himg/x1.png" /><br />小巨蛋迷你音响<br /><span>17400积分</span></li></a>
-                </ul>
-            </div>
-        </div>
-        <div class="rgttop" style="margin-top:25px; height:545px">
-            <div class="xptj">
-                <p>兑换排行</p>
-                <a href="huangou.html">查看更多</a>
-            </div>
-            <div class="xp">
-                <ul>
-                    <a href="chanpinxiangxi.html"><li><img src="/static/jifen/himg/x1.png" /><br />小巨蛋迷你音响<br /><span class="lj">17400积分</span><p class="ljdh">立即兑换</p></li></a>
-                    <a href="chanpinxiangxi.html"><li><img src="/static/jifen/himg/x1.png" /><br />小巨蛋迷你音响<br /><span class="lj">17400积分</span><p class="ljdh">立即兑换</p></li></a>
-                    <a href="chanpinxiangxi.html"><li><img src="/static/jifen/himg/x1.png" /><br />小巨蛋迷你音响<br /><span class="lj">17400积分</span><p class="ljdh">立即兑换</p></li></a>
-                    <a href="chanpinxiangxi.html"><li><img src="/static/jifen/himg/x1.png" /><br />小巨蛋迷你音响<br /><span class="lj">17400积分</span><p class="ljdh">立即兑换</p></li></a>
-                    <a href="chanpinxiangxi.html"><li><img src="/static/jifen/himg/x1.png" /><br />小巨蛋迷你音响<br /><span class="lj">17400积分</span><p class="ljdh">立即兑换</p></li></a>
-                    <a href="chanpinxiangxi.html"><li><img src="/static/jifen/himg/x1.png" /><br />小巨蛋迷你音响<br /><span class="lj">17400积分</span><p class="ljdh">立即兑换</p></li></a>
-                    <a href="chanpinxiangxi.html"><li><img src="/static/jifen/himg/x1.png" /><br />小巨蛋迷你音响<br /><span class="lj">17400积分</span><p class="ljdh">立即兑换</p></li></a>
-                    <a href="chanpinxiangxi.html"><li><img src="/static/jifen/himg/x1.png" /><br />小巨蛋迷你音响<br /><span class="lj">17400积分</span><p class="ljdh">立即兑换</p></li></a>
-
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<div style="clear:both"></div>
-<div class="ppzs">
-    <div class="pp"><p>品牌展示</p><a href="#">查看更多</a></div>
-    <ul>
-        <a href="#"><li><img src="/static/jifen/himg/cp.png" /></li></a>
-        <a href="#"><li><img src="/static/jifen/himg/cp.png" /></li></a>
-        <a href="#"><li><img src="/static/jifen/himg/cp.png" /></li></a>
-        <a href="#"><li><img src="/static/jifen/himg/cp.png" /></li></a>
-        <a href="#"><li><img src="/static/jifen/himg/cp.png" /></li></a>
-        <a href="#"><li style="border-right:0"><img src="/static/jifen/himg/cp.png" /></li></a>
-        <a href="#"><li style="border-bottom:0"><img src="/static/jifen/himg/cp.png" /></li></a>
-        <a href="#"><li style="border-bottom:0"><img src="/static/jifen/himg/cp.png" /></li></a>
-        <a href="#"><li style="border-bottom:0"><img src="/static/jifen/himg/cp.png" /></li></a>
-        <a href="#"><li style="border-bottom:0"><img src="/static/jifen/himg/cp.png" /></li></a>
-        <a href="#"><li style="border-bottom:0"><img src="/static/jifen/himg/cp.png" /></li></a>
-        <a href="#"><li style="border-right:0; border-bottom:0"><img src="/static/jifen/himg/cp.png" /></li></a>
-    </ul>
-</div>
 <div class="foot">
     <dl>
         <dt>新手上路</dt>
@@ -717,22 +473,10 @@ function usercheck(){
         <dd><a href="#">退换货政策</a></dd>
         <dd><a href="#">退款说明</a></dd>
     </dl>
-    <div class="lx">
-        <p class="ffrx">服务热线 ：400 - 016 -0026</p>
-        <p class="lxkf">联系在线客服</p>
+    <div>
+        服务热线 ：400 - 016 -0026
+        <a href="#">联系在线客服</a>
     </div>
 </div>
-<script>
-    $(document).ready(function() {
-        $(".zuoleft .nav-left dd").hover(function(){
-            $(this).find("div").show();
-            $(this).find("span").hide();
-        });
-        $(".zuoleft .nav-left dd").mouseleave(function(){
-            $(this).find("div").hide();
-            $(this).find("span").show();
-        });
-    });
-</script>
 </body>
 </html>

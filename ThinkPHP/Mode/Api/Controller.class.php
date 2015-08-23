@@ -14,11 +14,16 @@ namespace Think;
  */
 abstract class Controller {
 
+    private  $session_Id;
    /**
      * 架构函数
      * @access public
      */
     public function __construct() {
+
+
+
+
         //控制器初始化
         if(method_exists($this,'_initialize'))
             $this->_initialize();
