@@ -19,10 +19,7 @@ class UserController extends Controller {
             $this->error('用户名输入错误');
             exit;
         }else{
-
                 session('user.id',$result['id']);
-
-
             $this->success('成功登录');
             exit;
         }
@@ -70,12 +67,14 @@ class UserController extends Controller {
 
     }
 
+
     public function logout()
     {
         session_destroy();
         cookie('userId', null); //退出登录的时候清除cookie
         setcookie('is_login', 'yes', time()-86400, '/', '.touzila.com');
-        $this->redirect('Home/Index/index');
+        //$this->redirect('/Home/Index/index');
+        redirect('/Home/Index/index');
     }
 
 
